@@ -1,8 +1,8 @@
 <div ng-app="app">
   <div ng-controller="todoCtrl">
-    <div ng-repeat="task in list track by $index" ng-click="completeTask($index)">
-    <p>{{task}}</p>
-    <input ng-model="task">
+    <div ng-repeat="task in list track by $index" ng-click="toggleCompleted">
+    <p>{{task.text}}</p>
+    <input ng-model="task.text">
   </div>
   <h3>Add an item:</h3>
   <input ng-model="newItem">
