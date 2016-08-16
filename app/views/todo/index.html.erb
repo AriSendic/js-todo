@@ -1,0 +1,12 @@
+<div ng-app="app">
+  <div ng-controller="todoCtrl">
+    <div ng-repeat="list in lists track by $index" ng-click="completeTask($index)">
+    <p>{{list}}</p>
+    <input ng-model="list">
+  </div>
+  <h3>Add an item:</h3>
+  <input ng-model="newItem">
+  <button ng-click="addItem(newItem)"> Add it!</button>
+
+  </div>
+</div>
